@@ -22,7 +22,9 @@ fetch(url).then((response)=>{
       }else{
         massage1.textContent = search.value
         console.log(data)
-        massage2.textContent = 'Temprature is '+data.temprature+' and it feels like '+data.feelslike
+        massage2.textContent = 'Temprature is '+data.temprature+' and it feels like '+data.feelsLike;
+       
+        
       } 
   })
 });

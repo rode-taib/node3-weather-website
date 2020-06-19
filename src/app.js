@@ -3,7 +3,7 @@ const path = require('path')
 const hbs = require('hbs')
 const geocode = require('./utils/geocode')
 const forcast = require('./utils/forcast')
-const port = process.env.PORT
+const port = process.env.PORT || 3000
 
 
 const app = express()
@@ -88,7 +88,7 @@ app.get('*',(req,res)=>{
 })
 
 app.listen(port, ()=>{
-    console.log('Server is up on post ',port);
+    console.log('Server is up on port ',port);
     
 })
 // app.get('',(req,res)=>{
