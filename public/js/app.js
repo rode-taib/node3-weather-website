@@ -11,7 +11,7 @@ weatherForm.addEventListener('submit', (e)=>{
   e.preventDefault()
   const address = search.value
   
-  const url = "http://localhost:3000/weather?address="+address
+  const url = "/weather?address="+address
 massage1.textContent = 'Loading..'
 massage2.textContent=''
 fetch(url).then((response)=>{
