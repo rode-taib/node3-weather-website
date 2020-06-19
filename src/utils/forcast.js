@@ -14,7 +14,8 @@ const forcast = (longitude,latitude,callback)=>{
         }else{
             callback(undefined,{
                 temprature: res.body.current.temperature,
-                feelsLike: res.body.current.feelslike
+                feelsLike: res.body.current.feelslike,
+                humidity: res.body.current.humidity
             })
         }
     })
